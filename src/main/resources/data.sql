@@ -1,6 +1,4 @@
--- =========================================
--- Sample Products Data
--- =========================================
+
 INSERT INTO products (name, price, stock, category, is_active, created_at) VALUES
 ('iPhone 15 Pro', 1299.99, 50, 'Electronics', true, CURRENT_TIMESTAMP),
 ('Samsung Galaxy S24', 999.99, 30, 'Electronics', true, CURRENT_TIMESTAMP),
@@ -15,9 +13,7 @@ INSERT INTO products (name, price, stock, category, is_active, created_at) VALUE
 ('Mechanical Keyboard', 149.99, 60, 'Accessories', true, CURRENT_TIMESTAMP),
 ('Out of Stock Item', 49.99, 0, 'Test', false, CURRENT_TIMESTAMP);
 
--- =========================================
--- Sample Orders Data
--- =========================================
+
 INSERT INTO orders (customer_name, customer_email, order_date, status, total_amount) VALUES
 ('Alisher Karimov', 'alisher@example.com', CURRENT_TIMESTAMP, 'DELIVERED', 1449.98),
 ('Malika Yusupova', 'malika@example.com', CURRENT_TIMESTAMP, 'CONFIRMED', 999.99),
@@ -25,9 +21,7 @@ INSERT INTO orders (customer_name, customer_email, order_date, status, total_amo
 ('Nodira Rahimova', 'nodira@example.com', CURRENT_TIMESTAMP, 'SHIPPED', 349.99),
 ('Jasur Mirzayev', 'jasur@example.com', CURRENT_TIMESTAMP, 'CANCELLED', 150.00);
 
--- =========================================
--- Sample Order Items Data
--- =========================================
+
 INSERT INTO order_items (order_id, product_id, quantity, unit_price, total_price) VALUES
 (1, 1, 1, 1299.99, 1299.99),
 (1, 10, 1, 99.99, 99.99),
